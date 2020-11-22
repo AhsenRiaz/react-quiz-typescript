@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from './images/nattu-adnan-unsplash.jpg';
+import BGImage from './images/ian-badenhorst-SuT2MhkdyBQ-unsplash.jpg';
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -31,9 +31,14 @@ export const Wrapper = styled.div`
   }
 
   .score {
-    color: #fff;
+    color: #56ccff;
     font-size: 2rem;
     margin: 0;
+    background-color:white;
+    border-radius:15px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-bottom:1rem;
   }
 
   h1 {
@@ -61,6 +66,9 @@ export const Wrapper = styled.div`
     height: 40px;
     margin: 20px 0;
     padding: 0 40px;
+  }
+  .start:hover{
+      border:2px solid white;
   }
 
   .start {

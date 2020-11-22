@@ -44,5 +44,12 @@ export const ButtonWrapper = styled.div<ButtonWrapperProps>`
     border-radius: 10px;
     color: #fff;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease-in-out
+
+
+  }
+  button:hover{
+    border:2px solid black
+
   }
 `;
