@@ -12,12 +12,15 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-query": "^1.1.2",
     "@types/styled-components": "^5.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "firebase": "^8.1.1",
+    "react": "0.0.0-8e5adfbd7",
+    "react-dom": "0.0.0-8e5adfbd7",
     "react-query": "^2.4.3",
     "react-scripts": "3.4.1",
+    "react-service-worker": "^0.1.1",
     "styled-components": "^5.1.1",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -3,9 +3,13 @@ import { fetchQuizQuestions } from './API';
 // Components
 import QuestionCard from './components/QuestionCard';
 // types
-import { QuestionsState, Difficulty } from './API';
+import { QuestionsState} from './API';
 // Styles
 import { GlobalStyle, Wrapper } from './App.styles';
+
+// firebase
+
+
 
 export type AnswerObject = {
   question: string;
@@ -28,8 +32,8 @@ const App: React.FC = () => {
     setLoading(true);
     setGameOver(false);
     const newQuestions = await fetchQuizQuestions(
-      TOTAL_QUESTIONS,
-      Difficulty.EASY
+     10,
+     "easy"
     );
     setQuestions(newQuestions);
     setScore(0);
@@ -72,7 +76,7 @@ const App: React.FC = () => {
     <>
       <GlobalStyle />
       <Wrapper>
-        <h1>REACT QUIZ</h1>
+        <h1>REACT QUIZ PWA</h1>
         {gameOver || userAnswers.length === TOTAL_QUESTIONS ? (
           <button className='start' onClick={startTrivia}>
             Start
